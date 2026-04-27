@@ -1,0 +1,52 @@
+# Compilations et packages Maven
+target/
+*.jar
+*.war
+*.ear
+*.zip
+
+# Cache Maven local
+.m2/
+
+# IDE - IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE - VS Code
+.vscode/
+*.code-workspace
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+
+# IDE - NetBeans
+nbproject/
+.nb-gradle/
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.log
+
+# Node modules (si utilisé pour des outils de build)
+node_modules/
+
+# Fichiers de build
+build/
+dist/
+out/
+
+# Fichiers de dépendances
+*.pom
+dependency-reduced-pom.xml
