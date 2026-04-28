@@ -54,29 +54,25 @@ pipeline {
             }
         }
     }
-
-    post {
+post {
         always {
-            echo '=============== Rapport des tests ==============='
-            junit 'target/surefire-reports/**/*.xml'
+            echo '=============== Rapport des tests et Nettoyage ==============='
+            // On génère le rapport JUnit s'il existe
+            junit testResults: 'target/surefire-reports/**/*.xml', allowEmptyResults: true
+            // On nettoie l'espace de travail pour ne pas encombrer le serveur
+            cleanWs()
         }
 
         success {
             echo '✅ Pipeline exécuté avec succès!'
-            // Ajouter ici des notifications de succès (email, Slack, etc.)
         }
 
         failure {
             echo '❌ Pipeline échoué!'
-            // Ajouter ici des notifications d'erreur (email, Slack, etc.)
         }
 
         unstable {
-            echo '⚠️ Pipeline instable (tests échoués)'
-        }
-
-        always {
-            cleanWs()
+            echo '⚠️ Pipeline instable (certains tests ont échoué)'
         }
     }
 }
