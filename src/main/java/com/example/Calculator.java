@@ -2,6 +2,8 @@ package com.example;
 
 /**
  * Classe utilitaire pour effectuer des calculs simples
+ * 
+ * 
  */
 public class Calculator {
     
