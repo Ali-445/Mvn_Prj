@@ -22,7 +22,7 @@
 
 ## 4 - Vérification de logs de Jenkins pour voir le ping de github 
 
-<img width="1894" height="950" alt="webhookP6" src="https://github.com/user-attachments/assets/905769ba-a68d-4c25-a78d-55d7f6029a0b" />
+<img width="1883" height="903" alt="webhookP6" src="https://github.com/user-attachments/assets/ec72c820-40b4-47b7-99f0-22a783599704" />
 
 ## 5 - Vérification du premier build fait automatiquement par Jenkins après le scan de github repo
 
