@@ -38,7 +38,11 @@ pipeline {
         stage('Run') {
             steps {
                 dir('java-maven/maven') {
-                    sh 'java -jar target/maven-0.0.1-SNAPSHOT.jar'
+                    sh '''
+                    JAR_FILE=$(ls target/*.jar | head -n 1)
+                    echo "Running $JAR_FILE"
+                    java -jar "$JAR_FILE"
+                    '''
                 }
             }
         }
