@@ -11,7 +11,7 @@ pipeline {
         stage('Setup') {
             steps {
                 sh 'mkdir -p /root/.m2/repository'
-            }ù
+            }
         }
         stage('Checkout') {
             steps {
