@@ -5,6 +5,13 @@ package com.example;
  * 
  * 
  */
+
+/**
+ * Un commentaire pour Trigger le pipline CI
+ * 
+ * 
+ */
+
 public class Calculator {
     
     public int add(int a, int b) {
