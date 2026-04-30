@@ -8,6 +8,11 @@ import org.slf4j.LoggerFactory;
 /**
  * Application principale du mini projet
  */
+
+/**
+ * Un commentaire pour Trigger le pipline CI
+ */
+
 public class App {
     private static final Logger logger = LoggerFactory.getLogger(App.class);
 
