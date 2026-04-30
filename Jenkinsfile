@@ -28,6 +28,13 @@ pipeline {
                 }
             }
         }
+        stage('Verify Artifact') {
+            steps {
+                dir('java-maven/maven') {
+                    sh 'ls -l target'
+                }
+            }
+        }
         stage('Run') {
             steps {
                 dir('java-maven/maven') {
