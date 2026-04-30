@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                sh 'mkdir -p /root/.m2/repository'
+                sh 'mkdir -p /home/jenkins/.m2/repository'
             }
         }
         stage('Checkout') {
